@@ -20,6 +20,12 @@ body{
     color: var(--secondary-text-color);
 }
 
+.bimg{
+    background-image: url(/images/trekant.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
 h1 {
     font-family: var(--heading-font);
     font-size: 30px;
@@ -191,4 +197,29 @@ p {
     font-size: 30px;
     text-align: center;
     margin-bottom: 4rem;
+}
+
+.xenosintro {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.xenosintro h2 {
+    font-weight: 300;
+}
+
+.xenosintro h3 {
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.arrowback {
+    background-color: var(--secondary-text-color);
+    border-radius: 45px;
+    width: 28x;
+    height: 28px;
+    padding: 5px;
+position: absolute;
+top: 1rem;
+left: 1rem;
 }
