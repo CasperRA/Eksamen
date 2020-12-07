@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-color: #011c26;
+    --primary-text-color: #05f2af;
+    --secondary-text-color: #f28705;
+    --text-shadow:#f25c05;
+    --heading-font: 'Montserrat', sans-serif;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-text-color);
+}
+
+.bimg{
+    background-image: url(/images/trekant.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 30px;
+    color: var(--primary-text-color);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2{
+    font-size: 30px;
+    color: var(--primary-text-color);
+}
+
+h3{
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.h2intro {
+    color: var(--secondary-text-color);
+    font-family: var(--heading-font);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.h3intro {
+    color: var(--secondary-text-color);
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.imgme {
+    display: block;
+    width: 60%;
+    border: 3px solid var(--primary-text-color);
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.h2who {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.pwho{
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    border-top: 2px solid var(--primary-text-color);
+    border-left: 2px solid var(--primary-text-color);
+    padding: 1rem;
+    padding-right: 0.5rem;
+    width: 21.25rem;
+    height: 7rem;
+}
+
+.borderwhobot{
+    border-bottom: 2px solid var(--primary-text-color);
+    width: 4rem;
+    position: absolute;
+    top: 39.25rem;
+    left: 20.35rem;
+}
+
+.borderwhoright {
+    border-right: 2px solid var(--primary-text-color);
+    height: 3rem;
+    position: absolute;
+    top: 36.25rem;
+    left: 24.25rem; 
+}
+
+.expand {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.5rem;
+    text-shadow: 1px 0px var(--text-shadow);
+    position: absolute;
+    top: 37.25rem;
+    left: 19.95rem;
+}
+
+.shorten{
+    display: none;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.5rem;
+    text-shadow: 1px 0px var(--text-shadow);
+    position: absolute;
+    top: 53.25rem;
+    left: 19.7rem;
+}
+
+.projectsintro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.projectsintro h2 {
+    font-weight: 300;
+}
+
+.projectsintro img {
+    background-color: var(--secondary-text-color);
+    border-radius: 45px;
+    width: 28x;
+    height: 28px;
+    padding: 5px;
+    margin-left: 0.75rem;
+}
+
+.project {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.project h2{
+    font-weight: 300; 
+}
+
+.project h3{
+    font-weight: 300;
+}
+.project h3:nth-child(2) {
+    font-weight: 400;
+    
+}
+.project img{
+    width: 362px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--primary-text-color);
+}
+
+.project a{
+    font-size: 20px;
+    border: 2px solid var(--primary-text-color);
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.tostart {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.xenosintro {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.xenosintro h2 {
+    font-weight: 300;
+}
+
+.xenosintro h3 {
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.arrowback {
+    background-color: var(--secondary-text-color);
+    border-radius: 45px;
+    width: 28x;
+    height: 28px;
+    padding: 5px;
+position: absolute;
+top: 1rem;
+left: 1rem;
+}
