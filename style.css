@@ -33,6 +33,10 @@ h2{
     color: var(--primary-text-color);
 }
 
+h3{
+    font-size: 24px;
+}
+
 p {
     font-size: 20px;
 }
@@ -102,17 +106,18 @@ p {
     color: var(--secondary-text-color);
     font-weight: bold;
     font-size: 16px;
+    padding: 0.5rem;
     text-shadow: 1px 0px var(--text-shadow);
     position: absolute;
-    top: 37.75rem;
-    left: 20.45rem;
+    top: 37.25rem;
+    left: 19.95rem;
 }
 
 .projectsintro {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .projectsintro h2 {
@@ -126,4 +131,37 @@ p {
     height: 28px;
     padding: 5px;
     margin-left: 0.75rem;
+}
+
+.project {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project h2{
+    font-weight: 300; 
+}
+
+.project h3{
+    font-weight: 300;
+}
+.project h3:nth-child(2) {
+    font-weight: 400;
+    
+}
+.project img{
+    width: 366px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project a{
+    font-size: 20px;
+    border: 2px solid var(--primary-text-color);
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
 }
