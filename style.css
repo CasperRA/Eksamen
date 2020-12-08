@@ -257,3 +257,62 @@ p {
   .projecth1{
       margin-top: 4rem;
   }
+
+#pwhodeskid {
+    display: none;
+}
+
+  @media only screen and (min-width: 1800px) {
+      .bimg {
+          background-size: 50%;
+      }
+      h1 {
+          font-size: 60px;
+          text-align: left;
+          margin-left: 7rem;
+          margin-top: 7rem;
+      }
+      .h2intro {
+          font-size: 40px;
+          text-align: left;
+          margin-left: 7rem;
+      }
+
+      .h3intro {
+          font-size: 30px;
+          text-align: left;
+          margin-left: 7rem;
+      }
+    .imgme {
+        width: 25%;
+        margin-right: 13rem;
+        margin-top: -5rem;
+        border: 3px solid var(--primary-text-color);
+    }
+
+    .whoami {
+        position: absolute;
+        top: 20rem;
+        left: 7rem;
+    }
+    .h2who {
+        margin: 0;
+        font-size: 40px;
+        margin-top: 5rem;
+    }
+    .pwho {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        width: 50%;
+        height: 100%;
+        border-top: 3px solid var(--primary-text-color);
+        border-left: 3px solid var(--primary-text-color);
+    }
+    #pwhoid{
+        display: none;
+    }
+    #pwhodeskid {
+        display: block;
+    }
+  }
