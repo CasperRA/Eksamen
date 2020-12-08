@@ -32,7 +32,7 @@ h1 {
     color: var(--primary-text-color);
     font-weight: 400;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 h2{
@@ -197,18 +197,20 @@ p {
     font-size: 30px;
     text-align: center;
     margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
-.xenosintro {
+.projectsection {
     margin-left: 1.5rem;
     margin-top: 2rem;
+    margin-right: 1.5rem;
 }
 
-.xenosintro h2 {
+.projectsection h2 {
     font-weight: 300;
 }
 
-.xenosintro h3 {
+.projectsection h3 {
     font-weight: 300;
     color: var(--primary-text-color);
 }
@@ -219,7 +221,39 @@ p {
     width: 28x;
     height: 28px;
     padding: 5px;
-position: absolute;
-top: 1rem;
-left: 1rem;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
 }
+
+.projectsection img{
+    width: 100%;
+    border: 2px solid var(--primary-text-color);
+}
+
+.projectsection img:nth-child(3){
+    margin-top: 1rem;
+}
+
+.projectsection p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.rhythmmood {
+    width: 80% !important;
+    display: block;
+    margin: 0 auto;
+}
+.ml12 {
+    font-weight: 400;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .projecth1{
+      margin-top: 4rem;
+  }
