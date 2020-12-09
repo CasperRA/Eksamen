@@ -206,15 +206,6 @@ p {
     margin-right: 1.5rem;
 }
 
-.projectsection h2 {
-    font-weight: 300;
-}
-
-.projectsection h3 {
-    font-weight: 300;
-    color: var(--primary-text-color);
-}
-
 .arrowback {
     background-color: var(--secondary-text-color);
     border-radius: 45px;
@@ -228,7 +219,7 @@ p {
 
 .projectsection img{
     width: 100%;
-    border: 2px solid var(--primary-text-color);
+    border: 3px solid var(--primary-text-color);
 }
 
 .projectsection img:nth-child(3){
@@ -255,9 +246,22 @@ p {
   }
 
   .projecth1{
+      font-size: 34px;
       margin-top: 4rem;
   }
 
+  .projecth2 {
+      font-family: var(--heading-font);
+      font-size: 30px;
+      font-weight: 400;
+  }
+
+  .projecth3 {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+  }
 #pwhodeskid {
     display: none;
 }
@@ -379,5 +383,116 @@ p {
 
     .tostart {
         display: none;
+    }
+
+
+/* Responsive til projekter */
+    .projecth1 {
+        text-align: center;
+    }
+    .projectsection {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .projectsection img {
+        width: 600px;
+    }
+
+    .projectsection p {
+        width: 45%;
+        font-size: 30px;
+    }
+    .projecth1 {
+        font-size: 60px;
+        margin-top: 2rem;
+    }
+
+    .projecth2{
+        font-size: 40px;
+    }
+    
+    .projecth3 {
+        font-size: 30px;
+        margin-bottom: 3rem;
+    }
+
+    .arrowback {
+        width: 2.5rem;
+        height: 2.5rem;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    /* Xenos */
+    .xenosimg1 {
+        position: absolute;
+        top: 15rem;
+        right: 15rem;
+    }
+    .xenosimg2 {
+        position: absolute;
+        top: 38.5rem;
+        right: 11rem;
+    }
+    .xenosimg3 {
+        position: absolute;
+        top: 62rem;
+        right: 7rem;
+        margin-top: 0rem !important;
+    }
+    .xenosp1 {
+        margin-left: 5rem;
+    }
+    .xenosp2 {
+        margin-top: 4rem !important;
+        margin-left: 10rem;
+        margin-bottom: 0rem !important;
+    }
+
+    .pfinal {
+        margin-left: 15rem;
+        margin-top: 8rem !important;
+        margin-bottom: 10rem !important;
+    }
+    .xenosbar1 {
+        position: absolute;
+        border-right: 3px solid var(--primary-text-color);
+        height: 45rem;
+        top: 26.25rem;
+        left: 7rem;
+    }
+
+    .xenosbar2 {
+        position: absolute;
+        width: 5rem;
+        left: 7rem;
+        border-bottom: 3px solid var(--primary-text-color);
+        top: 49rem;
+    }
+
+    .xenosbar3 {
+        position: absolute;
+        width: 10rem;
+        left: 7rem;
+        border-bottom: 3px solid var(--primary-text-color);
+        top: 71.25rem;
+    }
+    /* Rhythm Studio */
+    .rhythmimg1 {
+        position: absolute;
+        top: 17.75rem;
+        right: 7rem;
+    }
+    .rhythmmood {
+        position: absolute;
+        width: 500px !important;
+        top: 40rem;
+        right: 10rem;
+    }
+    .rhythmimg2 {
+        position: absolute;
+        width: 60% !important;
+        top: 70rem;
     }
   }
