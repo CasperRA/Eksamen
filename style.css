@@ -306,6 +306,7 @@ p {
         font-weight: 300;
         width: 50%;
         height: 100%;
+        padding-right: 1rem;
         border-top: 3px solid var(--primary-text-color);
         border-left: 3px solid var(--primary-text-color);
     }
@@ -314,5 +315,69 @@ p {
     }
     #pwhodeskid {
         display: block;
+    }
+    .borderwhobot {
+        border-bottom: 3px solid var(--primary-text-color);
+        top: 28.5rem;
+        left: 49.8rem;
+    }
+    .borderwhoright {
+        border-right: 3px solid var(--primary-text-color);
+        left: 53.9rem;
+        top: 25.7rem;
+    }
+    .projectsintro {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    .expand {
+        display: none;
+    }
+
+    .projectgrid {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 12rem;
+        grid-template-areas:
+        ". ."
+        ". .";
+    }
+
+    .projectgrid div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        margin-left: 0;
+    }
+    
+    .projectgrid div h2{
+        font-size: 40px;
+    }
+
+    .projectgrid div img {
+        width: 100%;
+        height: 375px;
+    }
+
+    .projectgrid div a{
+        width: max-content;
+    }
+
+    #backgroundelement {
+        position: absolute;
+        z-index: -1;
+        background-image:url(/images/trekant.png);
+        width: 1000px;
+        height: 1000px;
+        right: 0rem;
+        top: 95rem;
+        transform: rotate(180deg);
+    }
+
+    .tostart {
+        display: none;
     }
   }
