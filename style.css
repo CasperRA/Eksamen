@@ -48,10 +48,6 @@ p {
     font-size: 20px;
 }
 
-p b {
-    color: var(--text-shadow);
-}
-
 .h2intro {
     color: var(--secondary-text-color);
     font-family: var(--heading-font);
@@ -222,7 +218,7 @@ p b {
 }
 
 .projectsection img{
-    width: 99%;
+    width: 100%;
     border: 3px solid var(--primary-text-color);
 }
 
@@ -257,7 +253,7 @@ p b {
   .projecth2 {
       font-family: var(--heading-font);
       font-size: 30px;
-      font-weight: 300;
+      font-weight: 400;
   }
 
   .projecth3 {
@@ -265,15 +261,6 @@ p b {
     font-size: 24px;
     font-weight: 300;
     color: var(--primary-text-color);
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .projecth4{
-      font-family: var(--heading-font);
-      font-size: 20px;
-      font-weight: 400;
-      color: var(--primary-text-color);
   }
 #pwhodeskid {
     display: none;
@@ -414,7 +401,7 @@ p b {
 
     .projectsection p {
         width: 45%;
-        font-size: 24px;
+        font-size: 30px;
     }
     .projecth1 {
         font-size: 60px;
@@ -427,10 +414,6 @@ p b {
     
     .projecth3 {
         font-size: 30px;
-    }
-
-    .projecth4{
-        font-size: 24px;
         margin-bottom: 3rem;
     }
 
@@ -442,30 +425,24 @@ p b {
     }
 
     /* Xenos */
-    .xenosmood {
-        position: absolute;
-        top: 20.5rem;
-        right: 7rem;
-    }
     .xenosimg1 {
         position: absolute;
-        top: 65rem;
+        top: 15rem;
         right: 15rem;
     }
     .xenosimg2 {
         position: absolute;
-        top: 88.5rem;
+        top: 38.5rem;
         right: 11rem;
     }
     .xenosimg3 {
         position: absolute;
-        top: 112rem;
+        top: 62rem;
         right: 7rem;
         margin-top: 0rem !important;
     }
     .xenosp1 {
-        width: 50% !important;
-        font-size: 24px !important;
+        margin-left: 5rem;
     }
     .xenosp2 {
         margin-top: 4rem !important;
