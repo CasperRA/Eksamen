@@ -147,14 +147,15 @@ p b {
 
 .projectsintro h2 {
     font-weight: 300;
+    line-height: 54px;
 }
 
 .projectsintro img {
     background-color: var(--secondary-text-color);
     border-radius: 45px;
-    width: 28x;
-    height: 28px;
-    padding: 5px;
+    width: 32x;
+    height: 32px;
+    padding: 8px;
     margin-left: 0.75rem;
 }
 
@@ -350,6 +351,9 @@ p b {
     .expand {
         display: none;
     }
+    .shorten {
+        display: none;
+    }
 
     .projectgrid {
         margin-left: 7rem;
@@ -397,12 +401,11 @@ p b {
     .tostart {
         display: none;
     }
-
+    .arrowcontinue {
+        display: none;
+    }
 
 /* Responsive til projekter */
-    .projecth1 {
-        text-align: center;
-    }
     .projectsection {
         margin-left: 7rem;
         margin-right: 7rem;
@@ -417,8 +420,10 @@ p b {
         font-size: 24px;
     }
     .projecth1 {
+        text-align: center;
         font-size: 60px;
         margin-top: 2rem;
+        margin-left: 0;
     }
 
     .projecth2{
@@ -444,17 +449,25 @@ p b {
     /* Xenos */
     .xenosmood {
         position: absolute;
-        top: 20.5rem;
+        top: 20rem;
         right: 7rem;
+        width: 35% !important;
+    }
+    .xenossplitbar {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        border-top: 2px solid var(--primary-text-color);
+        border-style: dashed;
+        color: transparent;
     }
     .xenosimg1 {
         position: absolute;
-        top: 65rem;
+        top: 63rem;
         right: 15rem;
     }
     .xenosimg2 {
         position: absolute;
-        top: 88.5rem;
+        top: 86.5rem;
         right: 11rem;
     }
     .xenosimg3 {
@@ -463,26 +476,33 @@ p b {
         right: 7rem;
         margin-top: 0rem !important;
     }
-    .xenosp1 {
+    .xenospintro {
         width: 50% !important;
         font-size: 24px !important;
     }
+
+    .xenosp1{
+        margin-top: 11.5rem !important;
+        margin-left: 5rem;
+    }
+
     .xenosp2 {
-        margin-top: 4rem !important;
+        margin-top: 6rem !important;
         margin-left: 10rem;
         margin-bottom: 0rem !important;
     }
 
-    .pfinal {
+    .xenosp3 {
         margin-left: 15rem;
-        margin-top: 8rem !important;
+        margin-top: 12.5rem !important;
         margin-bottom: 10rem !important;
+        width: 43% !important;
     }
     .xenosbar1 {
         position: absolute;
         border-right: 3px solid var(--primary-text-color);
-        height: 45rem;
-        top: 26.25rem;
+        height: 59rem;
+        top: 63rem;
         left: 7rem;
     }
 
@@ -491,7 +511,7 @@ p b {
         width: 5rem;
         left: 7rem;
         border-bottom: 3px solid var(--primary-text-color);
-        top: 49rem;
+        top: 96.5rem;
     }
 
     .xenosbar3 {
@@ -499,8 +519,34 @@ p b {
         width: 10rem;
         left: 7rem;
         border-bottom: 3px solid var(--primary-text-color);
-        top: 71.25rem;
+        top: 122rem;
     }
+
+    .arrowcontinue{
+        display: block;
+        position: absolute;
+        background-color: var(--background-color);
+        padding: 2rem;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%);
+        top: 50.5rem;
+    }
+
+    .arrowcontinue div{
+        width: 64px;
+        height: 64px;
+        border-radius: 45px;
+        background-color: var(--secondary-text-color);
+    }
+    .arrowcontinue div img{
+        width: 32px;
+        padding: 1rem;
+        border-radius: 45px;
+        background-color: var(--secondary-text-color);
+
+    }
+
     /* Rhythm Studio */
     .rhythmimg1 {
         position: absolute;
