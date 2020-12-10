@@ -48,20 +48,24 @@ p {
     font-size: 20px;
 }
 
+p b {
+    color: var(--text-shadow);
+}
+
 .h2intro {
     color: var(--secondary-text-color);
-    font-family: var(--heading-font);
+    /* font-family: var(--heading-font); */
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     margin-top: 0.5rem;
 }
 
 .h3intro {
     color: var(--secondary-text-color);
-    font-family: var(--heading-font);
+    /* font-family: var(--heading-font); */
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -143,14 +147,15 @@ p {
 
 .projectsintro h2 {
     font-weight: 300;
+    line-height: 54px;
 }
 
 .projectsintro img {
     background-color: var(--secondary-text-color);
     border-radius: 45px;
-    width: 28x;
-    height: 28px;
-    padding: 5px;
+    width: 32x;
+    height: 32px;
+    padding: 8px;
     margin-left: 0.75rem;
 }
 
@@ -206,15 +211,6 @@ p {
     margin-right: 1.5rem;
 }
 
-.projectsection h2 {
-    font-weight: 300;
-}
-
-.projectsection h3 {
-    font-weight: 300;
-    color: var(--primary-text-color);
-}
-
 .arrowback {
     background-color: var(--secondary-text-color);
     border-radius: 45px;
@@ -227,8 +223,8 @@ p {
 }
 
 .projectsection img{
-    width: 100%;
-    border: 2px solid var(--primary-text-color);
+    width: 99%;
+    border: 3px solid var(--primary-text-color);
 }
 
 .projectsection img:nth-child(3){
@@ -255,5 +251,389 @@ p {
   }
 
   .projecth1{
+      font-size: 34px;
       margin-top: 4rem;
+  }
+
+  .projecth2 {
+      font-family: var(--heading-font);
+      font-size: 30px;
+      font-weight: 300;
+  }
+
+  .projecth3 {
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .projecth4{
+      font-family: var(--heading-font);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--primary-text-color);
+  }
+#pwhodeskid {
+    display: none;
+}
+
+  @media only screen and (min-width: 1800px) {
+      .bimg {
+          background-size: 50%;
+      }
+      h1 {
+          font-size: 60px;
+          text-align: left;
+          margin-left: 7rem;
+          margin-top: 7rem;
+      }
+      .h2intro {
+          font-size: 40px;
+          text-align: left;
+          margin-left: 7rem;
+      }
+
+      .h3intro {
+          font-size: 30px;
+          text-align: left;
+          margin-left: 7rem;
+      }
+    .imgme {
+        width: 25%;
+        margin-right: 13rem;
+        margin-top: -5rem;
+        border: 3px solid var(--primary-text-color);
+    }
+
+    .whoami {
+        position: absolute;
+        top: 20rem;
+        left: 7rem;
+    }
+    .h2who {
+        margin: 0;
+        font-size: 40px;
+        margin-top: 5rem;
+    }
+    .pwho {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 400;
+        width: 50%;
+        height: 100%;
+        padding-right: 1rem;
+        border-top: 3px solid var(--primary-text-color);
+        border-left: 3px solid var(--primary-text-color);
+    }
+    #pwhoid{
+        display: none;
+    }
+    #pwhodeskid {
+        display: block;
+    }
+    .borderwhobot {
+        border-bottom: 3px solid var(--primary-text-color);
+        top: 28.35rem;
+        left: 51rem;
+    }
+    .borderwhoright {
+        border-right: 3px solid var(--primary-text-color);
+        left: 54.85rem;
+        top: 25.55rem;
+    }
+    .projectsintro {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    .expand {
+        display: none;
+    }
+    .shorten {
+        display: none;
+    }
+
+    .projectgrid {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 12rem;
+        grid-template-areas:
+        ". ."
+        ". .";
+    }
+
+    .projectgrid div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        margin-left: 0;
+    }
+    
+    .projectgrid div h2{
+        font-size: 40px;
+    }
+
+    .projectgrid div img {
+        width: 100%;
+        height: 375px;
+    }
+
+    .projectgrid div a{
+        width: max-content;
+    }
+
+    #backgroundelement {
+        position: absolute;
+        z-index: -1;
+        background-image:url(/images/trekant.png);
+        width: 1000px;
+        height: 1000px;
+        right: 0rem;
+        top: 95rem;
+        transform: rotate(180deg);
+    }
+
+    .tostart {
+        display: none;
+    }
+    .arrowcontinue {
+        display: none;
+    }
+
+/* Responsive til projekter */
+    .projectsection {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .projectsection img {
+        width: 600px;
+    }
+
+    .projectsection p {
+        width: 45%;
+        font-size: 24px;
+    }
+    .projecth1 {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .projecth2{
+        font-size: 40px;
+    }
+    
+    .projecth3 {
+        font-size: 30px;
+    }
+
+    .projecth4{
+        font-size: 24px;
+        margin-bottom: 3rem;
+    }
+
+    .arrowback {
+        width: 2.5rem;
+        height: 2.5rem;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    /* Xenos */
+    .xenosmood {
+        position: absolute;
+        top: 20rem;
+        right: 7rem;
+        width: 35% !important;
+    }
+    .xenossplitbar {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        border-top: 2px solid var(--primary-text-color);
+        border-style: dashed;
+        color: transparent;
+    }
+    .xenosimg1 {
+        position: absolute;
+        top: 63rem;
+        right: 15rem;
+    }
+    .xenosimg2 {
+        position: absolute;
+        top: 86.5rem;
+        right: 11rem;
+    }
+    .xenosimg3 {
+        position: absolute;
+        top: 110.2rem;
+        right: 7rem;
+        margin-top: 0rem !important;
+    }
+    .xenospintro {
+        width: 50% !important;
+        font-size: 24px !important;
+    }
+
+    .xenosp1{
+        margin-top: 11.5rem !important;
+        margin-left: 5rem;
+    }
+
+    .xenosp2 {
+        margin-top: 6.5rem !important;
+        margin-left: 10rem;
+        margin-bottom: 0rem !important;
+    }
+
+    .xenosp3 {
+        margin-left: 15rem;
+        margin-top: 9.5rem !important;
+        margin-bottom: 10rem !important;
+        width: 43% !important;
+    }
+    .xenosbar1 {
+        position: absolute;
+        border-right: 3px solid var(--primary-text-color);
+        height: 56.5rem;
+        top: 63rem;
+        left: 7rem;
+    }
+
+    .xenosbar2 {
+        position: absolute;
+        width: 5rem;
+        left: 7rem;
+        border-bottom: 3px solid var(--primary-text-color);
+        top: 97rem;
+    }
+
+    .xenosbar3 {
+        position: absolute;
+        width: 10rem;
+        left: 7rem;
+        border-bottom: 3px solid var(--primary-text-color);
+        top: 119.5rem;
+    }
+
+    .arrowcontinue{
+        display: block;
+        position: absolute;
+        background-color: var(--background-color);
+        padding: 2rem;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%);
+        top: 50.5rem;
+    }
+
+    .arrowcontinue div{
+        width: 64px;
+        height: 64px;
+        border-radius: 45px;
+        background-color: var(--secondary-text-color);
+    }
+    .arrowcontinue div img{
+        width: 32px;
+        padding: 1rem;
+        border-radius: 45px;
+        background-color: var(--secondary-text-color);
+
+    }
+
+    /* Rhythm Studio */
+
+    .rhythmmood {
+        position: absolute;
+        width: 500px !important;
+        top: 17rem;
+        right: 10rem;
+    }
+    .rhythmsplitbar {
+        margin-top: 8.75rem;
+        margin-bottom: 6rem;
+        border-top: 2px solid var(--primary-text-color);
+        border-style: dashed;
+        color: transparent;
+    }
+    .rhythmimg1 {
+        position: absolute;
+        top: 61.5rem;
+        right: 7rem;
+        width: 750px !important;
+    }
+
+    .rhythmimg2 {
+        position: absolute;
+        width: 70% !important;
+        top: 95rem;
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 5rem;
+    }
+    .rhythmfinal {
+        margin-bottom: 56rem;
+    }
+
+    /* Swing */
+    .swingimg1 {
+        position: absolute;
+        top: 21rem;
+        right: 7rem;
+    }
+    .swingp1 {
+        margin-top: 6.5rem !important;
+    }
+    .swingsplitbar {
+        margin-top: 6.65rem;
+        margin-bottom: 6rem;
+        border-top: 2px solid var(--primary-text-color);
+        border-style: dashed;
+        color: transparent;
+    }
+    .swingimg2{
+        position: absolute;
+        right: 7rem;
+        top: 64rem;
+    }
+    .swingimg3{
+        position: absolute;
+        top: 104rem;
+        left: 50%;
+        transform: translate(-50%);
+        width: 75% !important;
+        border: none !important;
+    }
+    .swingfinal {
+        margin-bottom: 62rem !important;
+    }
+
+    /* Outer Travels */
+
+    .spaceimg1 {
+        position: absolute;
+        top: 22rem;
+        right: 7rem;
+        width: 45rem !important;
+    }
+    .spacebanner {
+        position: absolute;
+        top: 62.5rem;
+        right: 7rem;
+        width: 45rem !important;
+    }
+    .spaceimg2 {
+        position: absolute;
+        top: 73rem;
+        right: 10.5rem;
+    }
+    .spacefinal{
+        margin-bottom: 5rem;
+    }
   }
