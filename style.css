@@ -54,18 +54,18 @@ p b {
 
 .h2intro {
     color: var(--secondary-text-color);
-    font-family: var(--heading-font);
+    /* font-family: var(--heading-font); */
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     margin-top: 0.5rem;
 }
 
 .h3intro {
     color: var(--secondary-text-color);
-    font-family: var(--heading-font);
+    /* font-family: var(--heading-font); */
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -472,7 +472,7 @@ p b {
     }
     .xenosimg3 {
         position: absolute;
-        top: 112rem;
+        top: 110.2rem;
         right: 7rem;
         margin-top: 0rem !important;
     }
@@ -487,21 +487,21 @@ p b {
     }
 
     .xenosp2 {
-        margin-top: 6rem !important;
+        margin-top: 6.5rem !important;
         margin-left: 10rem;
         margin-bottom: 0rem !important;
     }
 
     .xenosp3 {
         margin-left: 15rem;
-        margin-top: 12.5rem !important;
+        margin-top: 9.5rem !important;
         margin-bottom: 10rem !important;
         width: 43% !important;
     }
     .xenosbar1 {
         position: absolute;
         border-right: 3px solid var(--primary-text-color);
-        height: 59rem;
+        height: 56.5rem;
         top: 63rem;
         left: 7rem;
     }
@@ -511,7 +511,7 @@ p b {
         width: 5rem;
         left: 7rem;
         border-bottom: 3px solid var(--primary-text-color);
-        top: 96.5rem;
+        top: 97rem;
     }
 
     .xenosbar3 {
@@ -519,7 +519,7 @@ p b {
         width: 10rem;
         left: 7rem;
         border-bottom: 3px solid var(--primary-text-color);
-        top: 122rem;
+        top: 119.5rem;
     }
 
     .arrowcontinue{
@@ -548,20 +548,92 @@ p b {
     }
 
     /* Rhythm Studio */
-    .rhythmimg1 {
-        position: absolute;
-        top: 17.75rem;
-        right: 7rem;
-    }
+
     .rhythmmood {
         position: absolute;
         width: 500px !important;
-        top: 40rem;
+        top: 17rem;
         right: 10rem;
     }
+    .rhythmsplitbar {
+        margin-top: 8.75rem;
+        margin-bottom: 6rem;
+        border-top: 2px solid var(--primary-text-color);
+        border-style: dashed;
+        color: transparent;
+    }
+    .rhythmimg1 {
+        position: absolute;
+        top: 61.5rem;
+        right: 7rem;
+        width: 750px !important;
+    }
+
     .rhythmimg2 {
         position: absolute;
-        width: 60% !important;
-        top: 70rem;
+        width: 70% !important;
+        top: 95rem;
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 5rem;
+    }
+    .rhythmfinal {
+        margin-bottom: 56rem;
+    }
+
+    /* Swing */
+    .swingimg1 {
+        position: absolute;
+        top: 21rem;
+        right: 7rem;
+    }
+    .swingp1 {
+        margin-top: 6.5rem !important;
+    }
+    .swingsplitbar {
+        margin-top: 6.65rem;
+        margin-bottom: 6rem;
+        border-top: 2px solid var(--primary-text-color);
+        border-style: dashed;
+        color: transparent;
+    }
+    .swingimg2{
+        position: absolute;
+        right: 7rem;
+        top: 64rem;
+    }
+    .swingimg3{
+        position: absolute;
+        top: 104rem;
+        left: 50%;
+        transform: translate(-50%);
+        width: 75% !important;
+        border: none !important;
+    }
+    .swingfinal {
+        margin-bottom: 62rem !important;
+    }
+
+    /* Outer Travels */
+
+    .spaceimg1 {
+        position: absolute;
+        top: 22rem;
+        right: 7rem;
+        width: 45rem !important;
+    }
+    .spacebanner {
+        position: absolute;
+        top: 62.5rem;
+        right: 7rem;
+        width: 45rem !important;
+    }
+    .spaceimg2 {
+        position: absolute;
+        top: 73rem;
+        right: 10.5rem;
+    }
+    .spacefinal{
+        margin-bottom: 5rem;
     }
   }

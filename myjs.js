@@ -1,5 +1,5 @@
 
-
+// Har lavet en function som expander eller disbander min tekst om mig i mobil størrelse
 function expandpwho() {
     document.getElementById("pwhoid").innerHTML = "Hey! I'm Casper and I'm a student at Zealand Academy, currently studying multimedia design & communication. <br> <br> I live in Slagelse with my girlfriend and I currently work at Coop Danmark in Albertslund, as a front office assisent to support myself financially while i study. After I'm done studying multimedia, I'm gonna continue studying web development as I'm currently working towards becoming a great web dev.";
     document.getElementById("pwhoid").style.height = "23rem"
@@ -17,6 +17,9 @@ function shortenpwho() {
     document.getElementById("borderbot").style.top = "39.25rem"
     document.getElementById("borderright").style.top = "36.25rem"
 }
+
+
+// Animation fra Tobias Ahlin, massere af templates fra hans hjemmeside, har kun ændret noget timing https://tobiasahlin.com/moving-letters/
 
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml12');
