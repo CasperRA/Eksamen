@@ -52,10 +52,6 @@ p b {
     color: var(--text-shadow);
 }
 
-b {
-    color: var(--text-shadow);
-}
-
 .h2intro {
     color: var(--secondary-text-color);
     /* font-family: var(--heading-font); */
@@ -76,12 +72,11 @@ b {
 
 .imgme {
     display: block;
-    width: 50%;
+    width: 60%;
     border: 3px solid var(--primary-text-color);
     margin: 0 auto;
     margin-top: 1rem;
 }
-
 
 .h2who {
     font-size: 30px;
@@ -93,20 +88,19 @@ b {
 .pwho{
     margin-left: 1.5rem;
     margin-top: 0.5rem;
-    font-weight: 300;
     border-top: 2px solid var(--primary-text-color);
     border-left: 2px solid var(--primary-text-color);
     padding: 1rem;
     padding-right: 0.5rem;
     width: 21.25rem;
-    height: 9.5rem;
+    height: 7rem;
 }
 
 .borderwhobot{
     border-bottom: 2px solid var(--primary-text-color);
     width: 4rem;
     position: absolute;
-    top: 39.95rem;
+    top: 39.25rem;
     left: 20.35rem;
 }
 
@@ -114,29 +108,41 @@ b {
     border-right: 2px solid var(--primary-text-color);
     height: 3rem;
     position: absolute;
-    top: 36.95rem;
+    top: 36.25rem;
     left: 24.25rem; 
 }
 
-.learnme {
-    position: absolute;
+.expand {
+    display: block;
     text-decoration: none;
     color: var(--secondary-text-color);
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 16px;
     padding: 0.5rem;
-    border: 2px solid var(--primary-text-color);
-    top: 35.75rem;
-    left: 50%;
-    transform: translate(-50%);
-    width: max-content;
+    text-shadow: 1px 0px var(--text-shadow);
+    position: absolute;
+    top: 37.25rem;
+    left: 19.95rem;
 }
 
+.shorten{
+    display: none;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.5rem;
+    text-shadow: 1px 0px var(--text-shadow);
+    position: absolute;
+    top: 53.25rem;
+    left: 19.7rem;
+}
 
 .projectsintro {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .projectsintro h2 {
@@ -152,54 +158,7 @@ b {
     padding: 8px;
     margin-left: 0.75rem;
 }
-/* About me page */
-.imgabout {
-    display: block;
-    width: 60%;
-    border: 3px solid var(--primary-text-color);
-    margin: 0 auto;
-    margin-top: 1rem;
-}
-.abouth1{
-    margin-top: 3rem !important;
-}
-.abouth3 {
-    margin-top: 1.25rem;
-    font-size: 24px;
-    font-weight: 400;
-}
 
-.abouth4 {
-    margin-top: 0.5rem;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.prevocc {
-    margin-top: 1.25rem;
-}
-
-.prevocc h3{
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.prevocc h3:nth-child(1){
-    color: var(--text-shadow);
-    font-weight: bold;
-}
-
-.prevocc h4{
-    margin-top: 0.25rem;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.aboutfinal {
-    margin-bottom: 3rem;
-}
-
-/* Projects - Generally */
 .project {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -240,30 +199,11 @@ b {
 .tostart {
     display: block;
     text-decoration: none;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     font-size: 30px;
-    font-weight: 300;
     text-align: center;
-    margin: 0 auto;
     margin-bottom: 4rem;
     margin-top: 4rem;
-    padding: 0.5rem;
-    width: max-content;
-    border: 2px solid var(--primary-text-color);
-}
-.contactinfo {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    text-align: center;
-}
-.contactinfo h2 {
-    font-size: 30px;
-    color: var(--primary-text-color);
-    font-weight: 300;
-}
-.contactinfo h3 {
-    font-size: 24px;
-    font-weight: 300;
 }
 
 .projectsection {
