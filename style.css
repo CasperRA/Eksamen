@@ -1,11 +1,12 @@
+/* Import af fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
+/* Fjern af margin og padding + sørger for at hjemmesiden scroller smooth når en knap scroller for en */
 *{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-
+/* Laver variabler til at putte farver og font på */
 :root {
     --background-color: #011c26;
     --primary-text-color: #05f2af;
@@ -13,19 +14,19 @@
     --text-shadow:#f25c05;
     --heading-font: 'Montserrat', sans-serif;
 }
-
+/* Lavet basic font i body samt bagrunds- og tekstfarve */
 body{
     font-family: 'Nunito Sans', sans-serif;
     background-color: var(--background-color);
     color: var(--secondary-text-color);
 }
-
+/* Puttet baggrundsbillede på for design */
 .bimg{
     background-image: url(/images/trekant.png);
     background-size: 60%;
     background-repeat: no-repeat;
 }
-
+/* Basic styling af tekst */
 h1 {
     font-family: var(--heading-font);
     font-size: 30px;
@@ -58,7 +59,6 @@ b {
 
 .h2intro {
     color: var(--secondary-text-color);
-    /* font-family: var(--heading-font); */
     font-size: 30px;
     font-weight: 200;
     text-align: center;
@@ -67,21 +67,11 @@ b {
 
 .h3intro {
     color: var(--secondary-text-color);
-    /* font-family: var(--heading-font); */
     font-size: 24px;
     font-weight: 200;
     text-align: center;
     margin-top: 0.5rem;
 }
-
-.imgme {
-    display: block;
-    width: 50%;
-    border: 3px solid var(--primary-text-color);
-    margin: 0 auto;
-    margin-top: 1rem;
-}
-
 
 .h2who {
     font-size: 30px;
@@ -89,6 +79,8 @@ b {
     margin-top: 1rem;
     margin-left: 1.5rem;
 }
+
+/* Giver p tag til intro om mig størrelse og border til design */
 
 .pwho{
     margin-left: 1.5rem;
@@ -101,7 +93,7 @@ b {
     width: 21.25rem;
     height: 9.5rem;
 }
-
+/* To flyvende borders til design */
 .borderwhobot{
     border-bottom: 2px solid var(--primary-text-color);
     width: 4rem;
@@ -117,21 +109,29 @@ b {
     top: 36.95rem;
     left: 24.25rem; 
 }
-
+/* Billedet af mig på forside*/
+.imgme {
+    display: block;
+    width: 50%;
+    border: 3px solid var(--primary-text-color);
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+/* Knap til at komme på omkring mig siden*/
 .learnme {
     position: absolute;
     text-decoration: none;
     color: var(--secondary-text-color);
     font-size: 20px;
     padding: 0.5rem;
-    border: 2px solid var(--primary-text-color);
+    border: 3px solid var(--primary-text-color);
     top: 35.75rem;
     left: 50%;
     transform: translate(-50%);
     width: max-content;
 }
 
-
+/* Section med teskt og pil der viser til projekter */
 .projectsintro {
     display: flex;
     flex-direction: row;
@@ -150,12 +150,61 @@ b {
 .projectsintro img {
     background-color: var(--secondary-text-color);
     border-radius: 45px;
-    width: 32x;
+    width: 32px;
     height: 32px;
     padding: 8px;
     margin-left: 0.75rem;
 }
-/* About me page */
+/* Styling af de forskellige projekter på forsiden */
+.project {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.project h2{
+    font-weight: 300; 
+}
+
+.project h3{
+    font-weight: 300;
+}
+.project h3:nth-child(2) {
+    font-weight: 400;
+    
+}
+.project img{
+    width: 362px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--primary-text-color);
+}
+
+.project a{
+    font-size: 20px;
+    border: 2px solid var(--primary-text-color);
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+/* Video til forside */
+.video {
+    margin: 1.5rem;
+}
+.videoframe{
+    margin-top: 1.5rem;
+    width: 360px;
+    height: 200px;
+    border: 2px solid var(--primary-text-color);
+}
+
+/* ----- Omkring mig side ----- */
+/* Billede af mig  */
 .imgabout {
     display: block;
     width: 60%;
@@ -163,6 +212,7 @@ b {
     margin: 0 auto;
     margin-top: 1rem;
 }
+/* Basic styling af tekst og sections, margin og font */
 .abouth1{
     margin-top: 3rem !important;
 }
@@ -202,44 +252,8 @@ b {
     margin-bottom: 3rem;
 }
 
-/* Projects - Generally */
-.project {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-}
-
-.project h2{
-    font-weight: 300; 
-}
-
-.project h3{
-    font-weight: 300;
-}
-.project h3:nth-child(2) {
-    font-weight: 400;
-    
-}
-.project img{
-    width: 362px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--primary-text-color);
-}
-
-.project a{
-    font-size: 20px;
-    border: 2px solid var(--primary-text-color);
-    padding: 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    color: var(--secondary-text-color);
-}
-
+/* ----- Styling generelt til projektsiderne ----- */
+/* Tilbage til forside knappen i bunden */
 .tostart {
     display: block;
     text-decoration: none;
@@ -254,6 +268,7 @@ b {
     width: max-content;
     border: 2px solid var(--primary-text-color);
 }
+/* Kontakt info styling */
 .contactinfo {
     margin-top: 5rem;
     margin-left: 1.5rem;
@@ -270,24 +285,40 @@ b {
     font-size: 24px;
     font-weight: 300;
 }
+/* Overskrifter til projektsiderne */
+.projecth1{
+    font-size: 34px;
+    margin-top: 4rem;
+}
 
+.projecth2 {
+    font-family: var(--heading-font);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.projecth3 {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--primary-text-color);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projecth4{
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+}
+
+/* Til sections på mine projektsider */
 .projectsection {
     margin-left: 1.5rem;
     margin-top: 2rem;
     margin-right: 1.5rem;
 }
-
-.arrowback {
-    background-color: var(--secondary-text-color);
-    border-radius: 45px;
-    width: 28x;
-    height: 28px;
-    padding: 5px;
-    position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
-}
-
 .projectsection img{
     width: 99%;
     border: 3px solid var(--primary-text-color);
@@ -302,11 +333,19 @@ b {
     margin-bottom: 1.25rem;
 }
 
-.rhythmmood {
-    width: 80% !important;
-    display: block;
-    margin: 0 auto;
+/* Tilbage knap til projekt sider */
+.arrowback {
+    background-color: var(--secondary-text-color);
+    border-radius: 45px;
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
 }
+
+/* Styling inden tekst bliver til animation */
 .ml12 {
     font-weight: 400;
   }
@@ -316,50 +355,20 @@ b {
     line-height: 1em;
   }
 
-  .projecth1{
-      font-size: 34px;
-      margin-top: 4rem;
-  }
-
-  .projecth2 {
-      font-family: var(--heading-font);
-      font-size: 30px;
-      font-weight: 300;
-  }
-
-  .projecth3 {
-    font-family: var(--heading-font);
-    font-size: 24px;
-    font-weight: 300;
-    color: var(--primary-text-color);
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .projecth4{
-      font-family: var(--heading-font);
-      font-size: 20px;
-      font-weight: 400;
-      color: var(--primary-text-color);
-  }
-#pwhodeskid {
-    display: none;
-}
-.video {
-    margin: 1.5rem;
-}
-.videoframe{
-    margin-top: 1.5rem;
-    width: 360px;
-    height: 200px;
-    border: 2px solid var(--primary-text-color);
+/* Specifikt til rhythmsiden pga. meget anderledes billede */
+.rhythmmood {
+    width: 80% !important;
+    display: block;
+    margin: 0 auto;
 }
 
   @media only screen and (min-width: 1800px) {
       /* Forside og generelt */
+      /* Baggrundsbillede */
       .bimg {
           background-size: 50%;
       }
+      /* Overskrifter/tekst */
       h1 {
           font-size: 60px;
           text-align: left;
@@ -377,13 +386,14 @@ b {
           text-align: left;
           margin-left: 7rem;
       }
+      /* Billede af mig forside */
     .imgme {
         width: 25%;
         margin-right: 13rem;
         margin-top: -5rem;
         border: 3px solid var(--primary-text-color);
     }
-
+    /* Introduktion af hvem jeg er forside */
     .whoami {
         position: absolute;
         top: 20rem;
@@ -403,6 +413,7 @@ b {
         border-top: 3px solid var(--primary-text-color);
         border-left: 3px solid var(--primary-text-color);
     }
+    /* Knap til omkring mig siden */
     .learnme {
         font-size: 30px;
         top: 15rem;
@@ -411,7 +422,7 @@ b {
         left: 37%;
         transform: translate(-50%);
     }
-
+    /* Borders til design styling */
     .borderwhobot {
         border-bottom: 3px solid var(--primary-text-color);
         top: 19.85rem;
@@ -422,6 +433,7 @@ b {
         left: 55.5rem;
         top: 17.0rem;
     }
+    /* Splitbar på forside til design */
     .frontsplitbar {
         position: absolute;
         z-index: -1;
@@ -431,13 +443,14 @@ b {
         border-style: dashed;
         color: transparent;
     }
+    /* Introduktions pil til projekter på forside*/
     .projectsintro {
         margin-top: 8rem;
         margin-bottom: 5rem;
         padding-left: 1.45rem;
         padding-right:1.45rem;
     }
-
+    /* Grid til projekter på forside */
     .projectgrid {
         margin-left: 7rem;
         margin-right: 7rem;
@@ -469,7 +482,7 @@ b {
     .projectgrid div a{
         width: max-content;
     }
-
+    /* Video på forside */
     .pvideo {
         margin-right: 7rem;        
         margin-left: 7rem;
@@ -494,7 +507,7 @@ b {
         width: 50%;
         height: 500px;
     }
-
+/* Baggrundselement som ekstra baggrundsbillede design */
     #backgroundelement {
         position: absolute;
         z-index: -1;
@@ -505,11 +518,8 @@ b {
         top: 140rem;
         transform: rotate(180deg);
     }
-
+/* Fjerne knap der ikke skal være på desktop */
     .tostart {
-        display: none;
-    }
-    .arrowcontinue {
         display: none;
     }
 
@@ -574,8 +584,33 @@ b {
         top: 1.5rem;
         left: 1.5rem;
     }
+    /* Pil der viser videre på de forskellige projektsider */
+    .arrowcontinue{
+        display: block;
+        position: absolute;
+        background-color: var(--background-color);
+        padding: 2rem;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%);
+        top: 50.5rem;
+    }
+
+    .arrowcontinue div{
+        width: 64px;
+        height: 64px;
+        border-radius: 45px;
+        background-color: var(--secondary-text-color);
+    }
+    .arrowcontinue div img{
+        width: 32px;
+        padding: 1rem;
+        border-radius: 45px;
+        background-color: var(--secondary-text-color);
+    }
 
     /* Xenos */
+    /* Blanding af bars, billeder og tekst der er bliver rykket rundt */
     .xenosmood {
         position: absolute;
         top: 20rem;
@@ -651,33 +686,8 @@ b {
         top: 119.5rem;
     }
 
-    .arrowcontinue{
-        display: block;
-        position: absolute;
-        background-color: var(--background-color);
-        padding: 2rem;
-        z-index: 1;
-        left: 50%;
-        transform: translate(-50%);
-        top: 50.5rem;
-    }
-
-    .arrowcontinue div{
-        width: 64px;
-        height: 64px;
-        border-radius: 45px;
-        background-color: var(--secondary-text-color);
-    }
-    .arrowcontinue div img{
-        width: 32px;
-        padding: 1rem;
-        border-radius: 45px;
-        background-color: var(--secondary-text-color);
-
-    }
-
     /* Rhythm Studio */
-
+    /* Blanding af bars, billeder og tekst der er bliver rykket rundt */
     .rhythmmood {
         position: absolute;
         width: 500px !important;
@@ -711,6 +721,7 @@ b {
     }
 
     /* Swing */
+        /* Blanding af billeder og tekst der er bliver rykket rundt */
     .swingimg1 {
         position: absolute;
         top: 21rem;
@@ -744,7 +755,7 @@ b {
     }
 
     /* Outer Travels */
-
+        /* Blanding af billeder og tekst der er bliver rykket rundt */
     .spaceimg1 {
         position: absolute;
         top: 22rem;
