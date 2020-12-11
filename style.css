@@ -136,7 +136,10 @@ b {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0 auto;
     margin-top: 1.5rem;
+    background-color: var(--background-color);
+    width: max-content;
 }
 
 .projectsintro h2 {
@@ -246,15 +249,17 @@ b {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 0.5rem;
     width: max-content;
     border: 2px solid var(--primary-text-color);
 }
 .contactinfo {
+    margin-top: 5rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     text-align: center;
+    margin-bottom: 3rem;
 }
 .contactinfo h2 {
     font-size: 30px;
@@ -344,12 +349,14 @@ b {
     margin: 1.5rem;
 }
 .videoframe{
+    margin-top: 1.5rem;
     width: 360px;
     height: 200px;
     border: 2px solid var(--primary-text-color);
 }
 
   @media only screen and (min-width: 1800px) {
+      /* Forside og generelt */
       .bimg {
           background-size: 50%;
       }
@@ -391,37 +398,44 @@ b {
         margin: 0;
         font-size: 24px;
         font-weight: 400;
-        width: 50%;
-        height: 100%;
+        width: 70%;
         padding-right: 1rem;
         border-top: 3px solid var(--primary-text-color);
         border-left: 3px solid var(--primary-text-color);
     }
-    #pwhoid{
-        display: none;
+    .learnme {
+        font-size: 30px;
+        top: 15rem;
+        border: 3px solid var(--primary-text-color);
+        transform: none;
+        left: 37%;
+        transform: translate(-50%);
     }
-    #pwhodeskid {
-        display: block;
-    }
+
     .borderwhobot {
         border-bottom: 3px solid var(--primary-text-color);
-        top: 28.35rem;
-        left: 51rem;
+        top: 19.85rem;
+        left: 51.7rem;
     }
     .borderwhoright {
         border-right: 3px solid var(--primary-text-color);
-        left: 54.85rem;
-        top: 25.55rem;
+        left: 55.5rem;
+        top: 17.0rem;
+    }
+    .frontsplitbar {
+        position: absolute;
+        z-index: -1;
+        top: 53.1rem;
+        width: 99.5%;
+        border-top: 2px solid var(--primary-text-color);
+        border-style: dashed;
+        color: transparent;
     }
     .projectsintro {
-        margin-top: 10rem;
+        margin-top: 8rem;
         margin-bottom: 5rem;
-    }
-    .expand {
-        display: none;
-    }
-    .shorten {
-        display: none;
+        padding-left: 1.45rem;
+        padding-right:1.45rem;
     }
 
     .projectgrid {
@@ -456,6 +470,31 @@ b {
         width: max-content;
     }
 
+    .pvideo {
+        margin-right: 7rem;        
+        margin-left: 7rem;
+    }
+
+    .pvideo h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .pvideo h3{
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .pvideo h3:nth-child(2){
+        font-size: 30px;
+    }
+
+    .videoframe {
+        display: block;
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 50%;
+        height: 500px;
+    }
+
     #backgroundelement {
         position: absolute;
         z-index: -1;
@@ -463,7 +502,7 @@ b {
         width: 1000px;
         height: 1000px;
         right: 0rem;
-        top: 95rem;
+        top: 140rem;
         transform: rotate(180deg);
     }
 
@@ -474,6 +513,27 @@ b {
         display: none;
     }
 
+/* Omkring mig side */
+    .imgabout {
+        width: 25%;
+        margin-left: 7rem;
+        margin-top: 5rem;
+        border: 3px solid var(--primary-text-color);
+    }
+    .aboutme{
+        display: block;
+        position: absolute;
+        margin: 0rem !important;
+        top: 12rem;
+        width: 100%;
+        left: 47rem;
+    }
+    .aboutsection {
+        margin-top: 5rem;
+    }
+    .aboutfinal {
+        margin-top: 5rem;
+    }
 /* Responsive til projekter */
     .projectsection {
         margin-left: 7rem;
@@ -647,7 +707,7 @@ b {
         margin-bottom: 5rem;
     }
     .rhythmfinal {
-        margin-bottom: 56rem;
+        margin-bottom: 51rem;
     }
 
     /* Swing */
@@ -680,7 +740,7 @@ b {
         border: none !important;
     }
     .swingfinal {
-        margin-bottom: 62rem !important;
+        margin-bottom: 60rem !important;
     }
 
     /* Outer Travels */
