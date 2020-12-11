@@ -52,10 +52,6 @@ p b {
     color: var(--text-shadow);
 }
 
-b {
-    color: var(--text-shadow);
-}
-
 .h2intro {
     color: var(--secondary-text-color);
     /* font-family: var(--heading-font); */
@@ -76,12 +72,11 @@ b {
 
 .imgme {
     display: block;
-    width: 50%;
+    width: 60%;
     border: 3px solid var(--primary-text-color);
     margin: 0 auto;
     margin-top: 1rem;
 }
-
 
 .h2who {
     font-size: 30px;
@@ -93,20 +88,19 @@ b {
 .pwho{
     margin-left: 1.5rem;
     margin-top: 0.5rem;
-    font-weight: 300;
     border-top: 2px solid var(--primary-text-color);
     border-left: 2px solid var(--primary-text-color);
     padding: 1rem;
     padding-right: 0.5rem;
     width: 21.25rem;
-    height: 9.5rem;
+    height: 7rem;
 }
 
 .borderwhobot{
     border-bottom: 2px solid var(--primary-text-color);
     width: 4rem;
     position: absolute;
-    top: 39.95rem;
+    top: 39.25rem;
     left: 20.35rem;
 }
 
@@ -114,32 +108,41 @@ b {
     border-right: 2px solid var(--primary-text-color);
     height: 3rem;
     position: absolute;
-    top: 36.95rem;
+    top: 36.25rem;
     left: 24.25rem; 
 }
 
-.learnme {
-    position: absolute;
+.expand {
+    display: block;
     text-decoration: none;
     color: var(--secondary-text-color);
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 16px;
     padding: 0.5rem;
-    border: 2px solid var(--primary-text-color);
-    top: 35.75rem;
-    left: 50%;
-    transform: translate(-50%);
-    width: max-content;
+    text-shadow: 1px 0px var(--text-shadow);
+    position: absolute;
+    top: 37.25rem;
+    left: 19.95rem;
 }
 
+.shorten{
+    display: none;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.5rem;
+    text-shadow: 1px 0px var(--text-shadow);
+    position: absolute;
+    top: 53.25rem;
+    left: 19.7rem;
+}
 
 .projectsintro {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 auto;
-    margin-top: 1.5rem;
-    background-color: var(--background-color);
-    width: max-content;
+    margin-top: 2rem;
 }
 
 .projectsintro h2 {
@@ -155,54 +158,7 @@ b {
     padding: 8px;
     margin-left: 0.75rem;
 }
-/* About me page */
-.imgabout {
-    display: block;
-    width: 60%;
-    border: 3px solid var(--primary-text-color);
-    margin: 0 auto;
-    margin-top: 1rem;
-}
-.abouth1{
-    margin-top: 3rem !important;
-}
-.abouth3 {
-    margin-top: 1.25rem;
-    font-size: 24px;
-    font-weight: 400;
-}
 
-.abouth4 {
-    margin-top: 0.5rem;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.prevocc {
-    margin-top: 1.25rem;
-}
-
-.prevocc h3{
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.prevocc h3:nth-child(1){
-    color: var(--text-shadow);
-    font-weight: bold;
-}
-
-.prevocc h4{
-    margin-top: 0.25rem;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.aboutfinal {
-    margin-bottom: 3rem;
-}
-
-/* Projects - Generally */
 .project {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -243,32 +199,11 @@ b {
 .tostart {
     display: block;
     text-decoration: none;
-    color: var(--secondary-text-color);
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-    padding: 0.5rem;
-    width: max-content;
-    border: 2px solid var(--primary-text-color);
-}
-.contactinfo {
-    margin-top: 5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.contactinfo h2 {
-    font-size: 30px;
     color: var(--primary-text-color);
-    font-weight: 300;
-}
-.contactinfo h3 {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .projectsection {
@@ -349,14 +284,12 @@ b {
     margin: 1.5rem;
 }
 .videoframe{
-    margin-top: 1.5rem;
     width: 360px;
     height: 200px;
     border: 2px solid var(--primary-text-color);
 }
 
   @media only screen and (min-width: 1800px) {
-      /* Forside og generelt */
       .bimg {
           background-size: 50%;
       }
@@ -398,44 +331,37 @@ b {
         margin: 0;
         font-size: 24px;
         font-weight: 400;
-        width: 70%;
+        width: 50%;
+        height: 100%;
         padding-right: 1rem;
         border-top: 3px solid var(--primary-text-color);
         border-left: 3px solid var(--primary-text-color);
     }
-    .learnme {
-        font-size: 30px;
-        top: 15rem;
-        border: 3px solid var(--primary-text-color);
-        transform: none;
-        left: 37%;
-        transform: translate(-50%);
+    #pwhoid{
+        display: none;
     }
-
+    #pwhodeskid {
+        display: block;
+    }
     .borderwhobot {
         border-bottom: 3px solid var(--primary-text-color);
-        top: 19.85rem;
-        left: 51.7rem;
+        top: 28.35rem;
+        left: 51rem;
     }
     .borderwhoright {
         border-right: 3px solid var(--primary-text-color);
-        left: 55.5rem;
-        top: 17.0rem;
-    }
-    .frontsplitbar {
-        position: absolute;
-        z-index: -1;
-        top: 53.1rem;
-        width: 99.5%;
-        border-top: 2px solid var(--primary-text-color);
-        border-style: dashed;
-        color: transparent;
+        left: 54.85rem;
+        top: 25.55rem;
     }
     .projectsintro {
-        margin-top: 8rem;
+        margin-top: 10rem;
         margin-bottom: 5rem;
-        padding-left: 1.45rem;
-        padding-right:1.45rem;
+    }
+    .expand {
+        display: none;
+    }
+    .shorten {
+        display: none;
     }
 
     .projectgrid {
@@ -470,31 +396,6 @@ b {
         width: max-content;
     }
 
-    .pvideo {
-        margin-right: 7rem;        
-        margin-left: 7rem;
-    }
-
-    .pvideo h2 {
-        text-align: center;
-        font-size: 40px;
-    }
-    .pvideo h3{
-        text-align: center;
-        margin-top: 0.5rem;
-    }
-    .pvideo h3:nth-child(2){
-        font-size: 30px;
-    }
-
-    .videoframe {
-        display: block;
-        margin: 0 auto;
-        margin-top: 3rem;
-        width: 50%;
-        height: 500px;
-    }
-
     #backgroundelement {
         position: absolute;
         z-index: -1;
@@ -502,7 +403,7 @@ b {
         width: 1000px;
         height: 1000px;
         right: 0rem;
-        top: 140rem;
+        top: 95rem;
         transform: rotate(180deg);
     }
 
@@ -513,27 +414,6 @@ b {
         display: none;
     }
 
-/* Omkring mig side */
-    .imgabout {
-        width: 25%;
-        margin-left: 7rem;
-        margin-top: 5rem;
-        border: 3px solid var(--primary-text-color);
-    }
-    .aboutme{
-        display: block;
-        position: absolute;
-        margin: 0rem !important;
-        top: 12rem;
-        width: 100%;
-        left: 47rem;
-    }
-    .aboutsection {
-        margin-top: 5rem;
-    }
-    .aboutfinal {
-        margin-top: 5rem;
-    }
 /* Responsive til projekter */
     .projectsection {
         margin-left: 7rem;
@@ -707,7 +587,7 @@ b {
         margin-bottom: 5rem;
     }
     .rhythmfinal {
-        margin-bottom: 51rem;
+        margin-bottom: 56rem;
     }
 
     /* Swing */
@@ -740,7 +620,7 @@ b {
         border: none !important;
     }
     .swingfinal {
-        margin-bottom: 60rem !important;
+        margin-bottom: 62rem !important;
     }
 
     /* Outer Travels */
